@@ -9,9 +9,9 @@ public final class EmailAdapter implements MessageService {
         this.client = new EmailClient();
     }
 
-    public EmailAdapter(EmailClient cliet) {
-        if (cliet == null) throw new IllegalArgumentException("cliet == null");
-        this.client = cliet;
+    public EmailAdapter(EmailClient client) {
+        if (client == null) throw new IllegalArgumentException("client == null");
+        this.client = client;
     }
 
     @Override
